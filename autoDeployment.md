@@ -16,8 +16,10 @@ Deployments :
 - are manual
 - require synchronisation of many teams changes
 - are monolithic with many functional changes deployed together
-- do not use common artefacts deployed accross multiple environments
+- do not use artefact management
 - do not employ configuration as code to parameterise each environment
+- have no rollback strategy
+- **release** new functionality immediately to all users
 
 
 ##### Level 1
@@ -25,6 +27,21 @@ Deployments :
 Deployments :
 
 - include basic automation such as the use of deployment scripts
+- require sychronisation of only a few teams changes
+- have a basic ability to deploy components (cf. modules) of a change independently
+- use artefact management in deplyment for some environments
+- have some level of per environment paramertisation via configuration
+- have a manually executed rollback strategy
+- can support basic incremental release startegies
+
+#### Level 2
+
+Deployments:
+
+- Use CI/CD pipelines to facilitate deployment automation
 - 
 
 
+
+
+- do not use artefacts deployed accross multiple environments
