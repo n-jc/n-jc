@@ -20,6 +20,7 @@ Deployments :
 - do not employ configuration as code to parameterise each environment
 - have no rollback strategy
 - **release** new functionality immediately to all users
+- are neither safe, fast or repeatable
 
 
 ##### Level 1
@@ -45,3 +46,6 @@ Deployments:
 
 
 - do not use artefacts deployed accross multiple environments
+
+- to add somewhere - immutable infrastructure
+- use immutable infrastructure for stateless components
